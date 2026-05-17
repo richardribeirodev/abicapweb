@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="../fontawesome/css/all.css" rel="stylesheet" />
+    <script src="../js/script.js" defer></script>
+    <title>ABICAP</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/richardCss.css">
+    <style>
+        body {
+            background-color: #27408B;
+        }
+    </style>
+</head>
+
+<body class="body">
+
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #191970;">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html"><i
+                                class="fa-solid fa-car text-light"></i> ABICAP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-white text-center py-3" style="margin-top: 55px; background-color: #3A5FCD;">
+        <form class="row g-3" action="" style="margin-left: 300px; margin-right: 300px; margin-top: 25px;">
+            <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="meuemail@abicap">
+            </div>
+            <div class="col-md-6">
+                <label for="usuario" class="form-label">Usuário</label>
+                <input type="text" class="form-control" id="usuario">
+            </div>
+            <div class="col-md-6">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha">
+            </div>
+            <div class="col-6">
+                <label for="modeloCarro" class="form-label">Modelo do Carro</label>
+                <input type="text" class="form-control" id="modeloCarro" placeholder="Ex: BYD Song Plus">
+            </div>
+            <div class="col-4">
+                <label for="modeloCarro" class="form-label">Placa do Carro</label>
+                <input type="text" class="form-control" id="placaCarro" placeholder="Ex: ABC1D23">
+            </div>
+            <div class="col-2">
+                <label for="modeloCarro" class="form-label">Capacidade Bateria</label>
+                <input type="number" class="form-control" id="capacidadeBateria" placeholder="Ex: 85 KWh">
+            </div>
+            <div class="col-md-4">
+                <label for="marcaCarro" class="form-label">Marca</label>
+                <select class="form-select" aria-label="Default select example" id="marcaCarro">
+                    <option selected disabled value="">Selecione a marca</option>
+                    <option value="1">BYD</option>
+                    <option value="2">GWM</option>
+                    <option value="3">VOLVO</option>
+                    <option value="4">GEELY</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="conectorBateria" class="form-label">Conector da Bateria</label>
+                <select class="form-select" aria-label="Default select example" id="conectorBateria">
+                    <option selected disabled value="">Selecione o conector</option>
+                    <option value="1">Tipo 1 (SAE J1772)</option>
+                    <option value="2">Tipo 2 (IEC 62196-2)</option>
+                    <option value="3">CCS (Combined Charging System)</option>
+                    <option value="4">CHAdeMO</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="cargaBateria" class="form-label">Tipo de Carga</label>
+                <select class="form-select" aria-label="Default select example" id="cargaBateria">
+                    <option selected disabled value="">Selecione o tipo (velocidade)</option>
+                    <option value="1">Nível 1 (Lento - AC)</option>
+                    <option value="2">Nível 2 (Semirápido - AC)</option>
+                    <option value="3">Nível 3 (Rápido/Ultrarrápido - DC)</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
