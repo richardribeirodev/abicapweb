@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link href="../fontawesome/css/all.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="./css/richardCss.css">
+
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+
+    <title>ABICAP</title>
+
+    <style>
+        body {
+            background-color: #27408B;
+        }
+
+        .card-reserva {
+            background-color: #3A5FCD;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #191970;">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="../index.html">
+                            <i class="fa-solid fa-car text-light"></i> ABICAP
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+
+        <div class="card-reserva p-4 text-white">
+
+            <h2 class="text-center mb-4">
+                <i class="fa-solid fa-bolt"></i>
+                Reserva de Recarga
+            </h2>
+
+            <form class="row g-3" id="formReserva">
+
+                <!-- PONTO -->
+                <div class="col-md-12">
+                    <label for="pontoRecarga" class="form-label">
+                        Ponto de Recarga
+                    </label>
+
+                    <select class="form-select" id="pontoRecarga" required>
+                        <option selected disabled value="">
+                            Selecione um ponto
+                        </option>
+
+                        <option value="1">Ponto 01 - Shopping Iguatemi</option>
+                        <option value="2">Ponto 02 - Centro</option>
+                        <option value="3">Ponto 03 - Facens</option>
+                        <option value="4">Ponto 04 - Mercado Confiança</option>
+                    </select>
+                </div>
+
+                <!-- DATA -->
+                <div class="col-md-4">
+                    <label for="dataReserva" class="form-label">
+                        Dia da Reserva
+                    </label>
+
+                    <input
+                        type="date"
+                        class="form-control"
+                        id="dataReserva"
+                        required>
+                </div>
+
+                <!-- HORÁRIO INÍCIO -->
+                <div class="col-md-4">
+                    <label for="horarioInicio" class="form-label">
+                        Horário de Início
+                    </label>
+
+                    <input
+                        type="time"
+                        class="form-control"
+                        id="horarioInicio"
+                        step="60"
+                        required>
+                </div>
+
+                <!-- HORÁRIO FINAL -->
+                <div class="col-md-4">
+                    <label for="horarioFim" class="form-label">
+                        Horário de Finalização
+                    </label>
+
+                    <input
+                        type="time"
+                        class="form-control"
+                        id="horarioFim"
+                        step="60"
+                        required>
+                </div>
+
+                <!-- BOTÃO -->
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-primary px-5">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        Reservar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
